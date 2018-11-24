@@ -1,0 +1,31 @@
+ form{
+           margin-top:50px;
+       }
+       body{
+           background:linear-gradient(gray,white,gray);
+           background-attachment: fixed;
+       }
+       #button{
+           width:300px;
+       }
+       input{
+           width:80px;
+           height: 30px;
+           margin-top:9px;
+           padding:1px;
+       }
+#text,#button{
+    width:250px;
+    height: 30px;
+}
+footer{
+    margin-top:10%;
+    font-size:25px;
+}
+footer:hover{
+    color:red;
+}
+h1:hover{
+    color:chartreuse;
+}
+section{

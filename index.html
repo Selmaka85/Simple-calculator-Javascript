@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Calculator</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+  <center>
+   <h1 class="text-center bg-success">Calculator</h1>
+        <form id="forms" name="forms">
+            <input type="text" name="text" id="text"><br>
+        <table>
+        <tr>
+           <td><input class="btn btn-primary" type="button" value="1" onclick="forms.text.value+='1'"></td>
+           <td><input class="btn btn-primary" type="button" value="2" onclick="forms.text.value+='2'"></td>
+           <td><input class="btn btn-primary" type="button" value="3" onclick="forms.text.value+='3'"></td> 
+        </tr>
+        <tr>
+           <td><input class="btn btn-primary" type="button" value="4" onclick="forms.text.value+='4'"></td>
+           <td><input class="btn btn-primary" type="button" value="5" onclick="forms.text.value+='5'"></td>
+           <td><input class="btn btn-primary" type="button" value="6" onclick="forms.text.value+='6'"></td>
+        </tr>
+        <tr>
+           <td><input class="btn btn-primary"  type="button" value="7" onclick="forms.text.value+='7'"></td>
+           <td><input class="btn btn-primary" type="button" value="8" onclick="forms.text.value+='8'"></td>
+           <td><input class="btn btn-primary" type="button" value="9" onclick="forms.text.value+='9'"></td>
+        </tr>
+          <tr>
+           <td><input class="btn btn-primary" type="button" value="+" onclick="forms.text.value+='+'"></td>
+           <td><input class="btn btn-primary" type="button" value="-" onclick="forms.text.value+='-'"></td>
+           <td><input class="btn btn-primary" type="button" value="/" onclick="forms.text.value+='/'"></td>
+        </tr>
+          <tr>
+           <td><input class="btn btn-primary" type="button" value="*" onclick="forms.text.value+='*'"></td>
+           <td><input class="btn btn-primary" type="button" value="0" onclick="forms.text.value+='0'"></td>
+           <td><input class="btn btn-primary" type="button" value="=" onclick="forms.text.value=eval(forms.text.value)"></td>
+        </tr>
+    </table>
+        <input class="btn btn-danger" type="button" value="Clear All" id="button" onclick="forms.text.value=''">
+        </form>
+    </center>
+    
+    <footer class="text-center">
+        &copy; Bitica Teodor Catalin 2018
+    </footer>
+</body>
+</html>
